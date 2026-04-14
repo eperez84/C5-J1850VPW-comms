@@ -1,5 +1,7 @@
 # GM Class 2 Serial Traffic Simulator
 
+This repository builds on the <a href="https://github.com/garnerm91/J1850" target="_blank" rel="noopener noreferrer">J1850 VPW Arduino module project</a> by <a href="https://github.com/garnerm91" target="_blank" rel="noopener noreferrer">garnerm91</a>. It uses the same XC68HC58-based Class 2 transceiver; you can buy that hardware from the author’s <a href="https://www.ebay.com/usr/mattus.i8wvojtcv" target="_blank" rel="noopener noreferrer">eBay store</a>.
+
 Arduino Nano project for simulating/sending GM Class 2 (J1850 VPW) traffic over the serial bus.
 
 This project targets C5 Corvette model years `1997-2004` and focuses on the `EBCM-status` sketch for simulating EBCM traffic on the Class 2 bus. It is intended for setups where the factory ABS/EBCM is removed or replaced (for example, MK60 or Delta conversions) and suppresses ABS/traction warnings at startup.
@@ -7,10 +9,10 @@ This project targets C5 Corvette model years `1997-2004` and focuses on the `EBC
 ## Compatibility and Test Status
 
 - Intended platform: `1997-2004 Corvette (C5)`
-- Verified platform: `1999 Corvette (C5)` only
+- Verified platform: `1999 Corvette z51` only
 - Current validation: bench and startup-warning suppression checks
-- Not yet validated: long-term road use, all C5 model years, and interactions with options such as magnetic ride
-- Use at your own risk; behavior may vary across trims, years, and module configurations
+- Not yet validated: long-term road use, all C5 model years, interactions with options such as magnetic ride, or interactions with other modules
+- Use at your own risk; behavior may vary across trims, years, and module configurations!
 
 ## Pinout
 
