@@ -83,6 +83,7 @@ bool canSendPayloadNow(uint32_t now_ms, uint32_t min_gap_ms) {
   return (g_last_payload_ms == 0) || (now_ms - g_last_payload_ms >= min_gap_ms);
 }
 
+// Heartbeat
 void sendFrame495ms() {
   SPIcycle(0x88, 0x14);  // priority
   SPIcycle(0x25, 0x04);  // destination
@@ -93,6 +94,7 @@ void sendFrame495ms() {
   markPayloadSent();
 }
 
+// Heartbeat
 void sendFrame1964ms() {
   SPIcycle(0xE8, 0x14);  // priority
   SPIcycle(0xFF, 0x04);  // destination
