@@ -11,5 +11,5 @@
 !README.md
 
 # Keep only the EBCM-status folder contents.
-!C5-J1850VPW-comms/EBCM-status/
-!C5-J1850VPW-comms/EBCM-status/**
+!EBCM-status/
+!EBCM-status/**
