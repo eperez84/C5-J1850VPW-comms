@@ -1,0 +1,15 @@
+# Ignore everything by default.
+*
+
+# Allow traversing directories to reach allowlisted content.
+!*/
+
+# Keep this policy file tracked.
+!.gitignore
+
+# Keep public repository docs at workspace root.
+!README.md
+
+# Keep only the EBCM-status folder contents.
+!C5-J1850VPW-comms/EBCM-status/
+!C5-J1850VPW-comms/EBCM-status/**
