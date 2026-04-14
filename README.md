@@ -2,9 +2,15 @@
 
 Arduino Nano project for simulating/sending GM Class 2 (J1850 VPW) traffic over the serial bus.
 
-This repository is focused on the `EBCM-status` sketch used for simulating EBCM traffic on the serial bus.  Useful for those who have removed the ABS/EBCM entirely or for those who have switched over to an aftermarket ABS system (mk60, Delta, etc.) as it suppresses the cluster warnings.
+This project targets C5 Corvette model years `1997-2004` and focuses on the `EBCM-status` sketch for simulating EBCM traffic on the Class 2 bus. It is intended for setups where the factory ABS/EBCM is removed or replaced (for example, MK60 or Delta conversions) and suppresses ABS/traction warnings at startup.
 
-NOTE: As of this writing, I have NOT driven the car with all of this all wired up.  I can only confirm that - with the factory EBCM unplugged - the ABS and traction control warnings no longer appear on start up.  This was tested on a 1999 C5.  Unsure if it will work on any other model years or how it'll interact with magnetic ride.
+## Compatibility and Test Status
+
+- Intended platform: `1997-2004 Corvette (C5)`
+- Verified platform: `1999 Corvette (C5)` only
+- Current validation: bench and startup-warning suppression checks
+- Not yet validated: long-term road use, all C5 model years, and interactions with options such as magnetic ride
+- Use at your own risk; behavior may vary across trims, years, and module configurations
 
 ## Pinout
 
