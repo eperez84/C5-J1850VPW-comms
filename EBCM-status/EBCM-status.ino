@@ -1,7 +1,9 @@
 #include <SPI.h>
 
-#define csPIN  10
-#define rstPIN  8
+// Arduino Pro Mini (ATmega328): CS=A0 (D14), RST=A1 (D15); SPI on D11–D13.
+// Arduino Nano: CS=D10, RST=D8; SPI on D11–D13 — use #define csPIN 10 and #define rstPIN 8.
+#define csPIN  A0
+#define rstPIN A1
 
 static constexpr uint32_t kPeriod495Ms = 495;
 static constexpr uint32_t kPeriod1964Ms = 1964;
@@ -51,6 +53,14 @@ void runBootSequenceOnce();
 void setup() {
   pinMode(rstPIN, OUTPUT);
   pinMode(csPIN, OUTPUT);
+  // ATmega328 SPI master: SS (D10) must be OUTPUT even when CS uses another pin, or SPI can fail.
+#if defined(SS)
+  pinMode(SS, OUTPUT);
+  digitalWrite(SS, HIGH);
+#else
+  pinMode(10, OUTPUT);
+  digitalWrite(10, HIGH);
+#endif
   SPI.beginTransaction(SPISettings(100000, MSBFIRST, SPI_MODE3));
   SPI.begin();
   digitalWrite(rstPIN, LOW);
