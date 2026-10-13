@@ -4,7 +4,9 @@ This repository builds on the <a href="https://github.com/garnerm91/J1850" targe
 
 Arduino (Nano or Pro Mini) project for simulating/sending GM Class 2 (J1850 VPW) traffic over the serial bus. Both boards use hardware SPI on **D11–D13**; **CS** and **RST** differ—use the matching pinout table and `csPIN` / `rstPIN` in `EBCM-status.ino`.
 
-This project targets C5 Corvette model years `1997-2004` and focuses on the `EBCM-status` sketch for simulating EBCM traffic on the Class 2 bus. It is intended for setups where the factory ABS/EBCM is removed or replaced (for example, MK60 or Delta conversions) and suppresses ABS/traction warnings at startup. <a href="https://www.instagram.com/p/DXRoWlNgNlJ/" target="_blank" rel="noopener noreferrer">Instagram demo</a>.
+This project targets C5 Corvette model years `1997-2004` and focuses on the `EBCM-status` sketch for simulating EBCM traffic on the Class 2 bus. It is intended for setups where the factory ABS/EBCM is removed or replaced (for example, MK60 or Delta conversions) and suppresses ABS/traction warnings at startup.
+
+<a href="https://www.instagram.com/p/DXRoWlNgNlJ/" target="_blank" rel="noopener noreferrer">Video demo on Instagram</a>
 
 ## Compatibility and Test Status
 
