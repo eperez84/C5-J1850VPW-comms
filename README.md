@@ -6,6 +6,11 @@ Arduino (Nano or Pro Mini) project for simulating/sending GM Class 2 (J1850 VPW)
 
 This project targets C5 Corvette model years `1997-2004` and focuses on the `EBCM-status` sketch for simulating EBCM traffic on the Class 2 bus. It is intended for setups where the factory ABS/EBCM is removed or replaced (for example, MK60 or Delta conversions) and suppresses ABS/traction warnings at startup.
 
+<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DXRoWlNgNlJ/" data-instgrm-version="14">
+  <a href="https://www.instagram.com/p/DXRoWlNgNlJ/" target="_blank" rel="noopener noreferrer">View this post on Instagram</a>
+</blockquote>
+<script async src="https://www.instagram.com/embed.js"></script>
+
 ## Compatibility and Test Status
 
 - Intended platform: `1997-2004 Corvette (C5)`
